@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import win32com.client as win32 # pip install pypiwin32
 
-def __Emailer(text, subject, recipient, auto=True):
+def __create_email(text, subject, recipient, auto=True):
     #import win32com.client as win32   
 
     outlook = win32.Dispatch('outlook.application')
@@ -16,5 +16,5 @@ def __Emailer(text, subject, recipient, auto=True):
 
 
 if __name__ == "__main__":
-    __Emailer("test", "test", "tech285@gmail.com")
+    __create_email("test", "test", "tech285@gmail.com")
 
