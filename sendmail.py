@@ -18,3 +18,4 @@ def __create_email(text, subject, recipient, auto=True):
 if __name__ == "__main__":
     __create_email("test", "test", "tech285@gmail.com")
 
+# END OF FILE
